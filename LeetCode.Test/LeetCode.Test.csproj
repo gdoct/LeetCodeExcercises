@@ -24,4 +24,12 @@
     <ProjectReference Include="..\LeetCode.Impl\LeetCode.Impl.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="AddTwoNumbers\" />
+    <Folder Include="Atoi\" />
+    <Folder Include="MedianSortedArrays\" />
+    <Folder Include="ReverseInt\" />
+    <Folder Include="TwoSumImpl\" />
+  </ItemGroup>
+
 </Project>
