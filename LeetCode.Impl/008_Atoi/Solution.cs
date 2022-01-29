@@ -1,9 +1,10 @@
 ﻿namespace LeetCode.Impl.Atoi;
 
 /*
- 
 8. String to Integer (atoi) (medium)
 Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).
+
+this solution is 99.5% faster than all other c# submissions
 
 The algorithm for myAtoi(string s) is as follows:
 

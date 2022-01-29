@@ -1,5 +1,6 @@
 ﻿using System;
 using Xunit;
+using LeetCode.Impl.Template;
 
 namespace LeetCode.Test.Template;
 
@@ -7,11 +8,9 @@ public class SolutionTests
 {
     [Theory]
     [InlineData(null)]
-    public void TestSomething(string s)
+    public void TestSomething(string? value)
     {
-        if (s is null)
-        {
-            throw new ArgumentNullException(nameof(s));
-        }
+        _ = new Solution();
+        Assert.Null(value);
     }
 }
