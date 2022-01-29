@@ -6,7 +6,7 @@ namespace LeetCode.Test.LongestPalindrome;
 public class LongestPalindromeTests
 {
     [Theory]
-    [InlineData("abba", "bb")]
+    [InlineData("abba", "abba")]
     [InlineData("", "")]
     [InlineData("kfdjhahkasdfggfdsasajhhhfdsjjdfkjd", "asdfggfdsa")]
     public void Test1(string s, string expected)
