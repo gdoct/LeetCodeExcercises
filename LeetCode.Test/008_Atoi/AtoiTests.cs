@@ -1,7 +1,7 @@
-using LeetCode.Impl;
+using LeetCode.Impl.Atoi;
 using Xunit;
 
-namespace LeetCode.Test;
+namespace LeetCode.Test.Atoi;
 
 public class AtoiTests
 {
@@ -18,7 +18,7 @@ public class AtoiTests
     [InlineData("2147483646", 2147483646)]
     public void Test1(string s, int expected)
     {
-        var atoi = new Atoi();
+        var atoi = new Solution();
         var result = atoi.MyAtoi(s);
         Assert.Equal(expected, result);
     }

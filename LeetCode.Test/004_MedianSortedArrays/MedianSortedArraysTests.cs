@@ -1,7 +1,7 @@
-﻿using LeetCode.Impl;
+﻿using LeetCode.Impl.MedianSortedArrays;
 using Xunit;
 
-namespace LeetCode.Test;
+namespace LeetCode.Test.MedianSortedArrays;
 
 public class MedianSortedArraysTests
 {
@@ -10,7 +10,7 @@ public class MedianSortedArraysTests
     [InlineData(new[] { 1, 2 }, new[] { 3, 4 }, 2.5)]
     public void Test1(int[] a1, int[] a2, double expected)
     {
-        var m = new MedianSortedArrays();
+        var m = new Solution();
         var result = m.FindMedianSortedArrays(a1, a2);
         Assert.Equal(expected, result);
     }

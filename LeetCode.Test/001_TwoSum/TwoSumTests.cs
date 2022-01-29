@@ -1,9 +1,9 @@
-﻿using LeetCode.Impl;
+﻿using LeetCode.Impl.TwoSum;
 using Xunit;
 
-namespace LeetCode.Test;
+namespace LeetCode.Test.TwoSumImpl;
 
-public class TwoSumImplTests
+public class TwoSumTests
 {
     [InlineData(new int[] { 2, 7, 11, 15 }, 9, new int[] { 1, 0 })]
     [InlineData(new int[] { 3, 2, 4 }, 6, new int[] { 2, 1 })]
@@ -13,7 +13,7 @@ public class TwoSumImplTests
     public void TwoSum_StateUnderTest_ExpectedBehavior(int[] array, int target, int[] expected)
     {
         // Arrange
-        var twoSumImpl = new TwoSumImpl();
+        var twoSumImpl = new Solution();
 
         var result = twoSumImpl.TwoSum(array, target);
 

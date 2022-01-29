@@ -1,7 +1,7 @@
-﻿using LeetCode.Impl;
+﻿using LeetCode.Impl.ReverseInt;
 using Xunit;
 
-namespace LeetCode.Test;
+namespace LeetCode.Test.ReverseInt;
 
 public class ReverseIntTests
 {
@@ -13,7 +13,7 @@ public class ReverseIntTests
     public void ReverseNum(int n, int expected)
     {
         // Arrange
-        var reverseInt = new ReverseInt();
+        var reverseInt = new Solution();
         // Act
         var result = reverseInt.Reverse(n);
 
