@@ -2,10 +2,6 @@
 /*
 9. Palindrome Number (easy)
 
-***
-Runtime: 36 ms, faster than 99.43% of C# online submissions for Palindrome Number.
-***
-
 Given an integer x, return true if x is palindrome integer.
 
 An integer is a palindrome when it reads the same backward as forward.
