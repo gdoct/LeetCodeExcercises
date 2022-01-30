@@ -1,5 +1,7 @@
 ﻿9. Palindrome Number (easy)
 
+https://leetcode.com/problems/palindrome-number
+
 Given an integer x, return true if x is palindrome integer.
 
 An integer is a palindrome when it reads the same backward as forward.
@@ -27,3 +29,5 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 Constraints:
 
 -231 <= x <= 231 - 1 
+
+![image](https://user-images.githubusercontent.com/11509384/151699003-683dc197-6f62-4cb6-8505-90c13ba9d40c.png)
