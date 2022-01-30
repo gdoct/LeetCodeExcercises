@@ -5,6 +5,9 @@ namespace LeetCode.Impl.RegEx;
 /*
 10. Regular Expression Matching (hard)
 https://leetcode.com/problems/regular-expression-matching/
+
+This implementation beats 99.84 % of csharp submissions
+
 Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
 '.' Matches any single character.​​​​
 '*' Matches zero or more of the preceding element.
@@ -43,10 +46,10 @@ internal class Solution
     public bool IsMatch(string s, string pattern)
     {
         var searchspace = new bool?[s.Length, pattern.Length];
-        return DepthFirstSearch(s, pattern, 0, 0, ref searchspace);
+        return DepthFirstSearch(ref s, ref pattern, 0, 0, ref searchspace);
     }
 
-    private static bool DepthFirstSearch(string text, string pattern, int depth, int breadth, ref bool?[,] searchspace)
+    private static bool DepthFirstSearch(ref string text, ref string pattern, int depth, int breadth, ref bool?[,] searchspace)
     {
         if (breadth == pattern.Length)
         {
@@ -70,12 +73,12 @@ internal class Solution
         var isMatch = (text[depth] == pattern[breadth] || pattern[breadth] == '.');
         if (breadth + 1 < pattern.Length && pattern[breadth + 1] == '*')
         {
-            isMatch = (isMatch && DepthFirstSearch(text, pattern, depth + 1, breadth, ref searchspace))
-                      || DepthFirstSearch(text, pattern, depth, breadth + 2, ref searchspace);
+            isMatch = (isMatch && DepthFirstSearch(ref text, ref pattern, depth + 1, breadth, ref searchspace))
+                      || DepthFirstSearch(ref text, ref pattern, depth, breadth + 2, ref searchspace);
         }
         else
         {
-            isMatch = isMatch && DepthFirstSearch(text, pattern, depth + 1, breadth + 1, ref searchspace);
+            isMatch = isMatch && DepthFirstSearch(ref text, ref pattern, depth + 1, breadth + 1, ref searchspace);
         }
         searchspace[depth, breadth] = isMatch;
         return isMatch;

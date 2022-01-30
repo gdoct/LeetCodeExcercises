@@ -37,11 +37,13 @@ internal class Solution
     public int[] TwoSum(int[] nums, int target)
     {
         int x = 0;
-        foreach (int i in nums)
+        for (int col = 0; col < nums.Length; col++)
         {
+            int i = nums[col];
             int y = 0;
-            foreach (int j in nums)
+            for (int n = 0; n < nums.Length; n++)
             {
+                int j = nums[n];
                 if (x == y) continue;
                 if (i + j == target)
                 {
