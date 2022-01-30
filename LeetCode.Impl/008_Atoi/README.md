@@ -1,4 +1,4 @@
-﻿8. String to Integer (atoi) (medium)
+# 8. String to Integer (atoi) (medium)
 
 https://leetcode.com/problems/string-to-integer-atoi/
 
