@@ -26,3 +26,5 @@ nums2.length == n
 0 <= n <= 1000
 1 <= m + n <= 2000
 -106 <= nums1[i], nums2[i] <= 106
+
+![image](https://user-images.githubusercontent.com/11509384/151698821-1a440cc1-297d-4bc2-81a5-f00560e8e75e.png)
