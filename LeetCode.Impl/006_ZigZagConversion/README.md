@@ -1,13 +1,9 @@
 ﻿6. Zigzag Conversion
 Medium
 
-3265
+https://leetcode.com/problems/zigzag-conversion/
 
-7633
 
-Add to List
-
-Share
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 
 P   A   H   N
@@ -44,3 +40,5 @@ Constraints:
 1 <= s.length <= 1000
 s consists of English letters (lower-case and upper-case), ',' and '.'.
 1 <= numRows <= 1000
+
+![image](https://user-images.githubusercontent.com/11509384/151698894-69024bbf-5145-45fc-87ee-8f844fe5ebb2.png)
